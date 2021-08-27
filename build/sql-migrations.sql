@@ -27,7 +27,7 @@ BEGIN
     CREATE TABLE [dbo].[Branches] (
         [ID] int IDENTITY(1,1) NOT NULL,
         [BranchCode] [nvarchar](8) NOT NULL,
-        [BranchName] [nvarchar](64) NOT NULL
+        [BranchDescription] [nvarchar](64) NOT NULL
     PRIMARY KEY CLUSTERED ([ID] ASC))
     
     CREATE TABLE [dbo].[Customers] (

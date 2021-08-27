@@ -86,7 +86,7 @@ Improve the upload process as follows:
 * Update DbService to create individual Customers records for the unique names found in the CustomerName column
 * Update DbService to create individual Branches records for the unique BranchCode values found in the data file
 * Modify the existing Loans insert logic to properly reference the Customers and BranchName records
-* Finally, add CustomerName and BranchName to the loan listing screen
+* Finally, add CustomerName and BranchDescription to the loan listing screen
 ````
 
 
