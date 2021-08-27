@@ -20,7 +20,19 @@
         const data = new FormData();
         data.append("loanFile", input.files[0]);
         window.fetch('/api/loans', {method: 'POST', body: data})
-            .then(resp => resp.text())
-            .then(data => console.log(data));
+            .then(resp => {
+                if (!resp.ok) {
+                    throw new Error(`An error occurred during import`);
+                }
+                resp.text();
+            })
+            .then(data => {
+                console.log(data);
+                setTimeout(()=> window.location.href = "/", 500);
+            })
+            .catch(err=> {
+                alert(err.message);
+            });
+                
     };
 </script>
