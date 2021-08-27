@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Import";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Import Loan Data</h1>
+    <div class="mt-5">
+        <form id="uploadForm" action="/api/loans" method="post" enctype="multipart/form-data">
+            <div class="fileUpload btn btn-primary">
+                <span>Upload Loan File</span>
+                <input id="uploadBtn" name="loanfile" type="file" class="upload"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+    const input = document.getElementById('uploadBtn')
+    input.onchange = function () {
+        const data = new FormData();
+        data.append("loanFile", input.files[0]);
+        window.fetch('/api/loans', {method: 'POST', body: data})
+            .then(resp => resp.text())
+            .then(data => console.log(data));
+    };
+</script>
