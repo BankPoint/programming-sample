@@ -144,7 +144,7 @@ Update the loan listing screen to:
 Once you've completed all the development tasks, and committed your changes to your local git repo 
 you can follow these steps to send your changes to the program manager
 
-* Make sure that you don't have any uncommitted changes as any unversioned or ignored files will be wiped out with the next step
+* Make sure that all of your code changes have been committed. The program manager will be reviewing your code diffs.
 * Zip up the entire project directory contents
 * Copy the zip file out to the directory provided in the original email that we sent out to you
 * Send an email to us to let us know you've submitted your solution. The email address to send to will be in the programming sample invitation email.
