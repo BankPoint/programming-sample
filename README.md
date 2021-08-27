@@ -1,5 +1,5 @@
 ﻿<div>
-  <h1 align="center">BP-Loans Programming Sample</h1>
+  <h1 align="center">BP Loans Programming Sample</h1>
     <img
       alt="background"
       src="https://bankpointstaticfiles.z21.web.core.windows.net/images/BankPointHeaderConcepts03.jpg"
@@ -138,31 +138,6 @@ Update the loan listing screen to:
 * Ensure that the paged data on screen honors the updated sort options
 ```
 
-## TASK-005 Add search support (REMOVE)
-
-Sorting should go a long way to helping users find their loans, but QA thinks we need to add search as well.
-
-```angular2html
-* If a value is entered into the search box at the top of the screen then only show loans
-  which have a Loan Number of Customer Name which includes the search string
-* String comparisons should be case insenstive
-* Wildcards are not supported. The search string can appear anywhere in the Loan Number or Customer Name field
-* Ensure that paging and sorting still work in conjunction with the search results
-```
-
-
-## TASK-006 Improve the import loan data screen (REMOVE)
-
-Currently the only feedback a user gets after uploading a file is a string printed to the debug console. 
-
-Make the following improvements to the import screen
-```angular2html
-* For successful uploads, include an on screen message below the import button showing the results. 
-  Include the number of loan records added.
-* If there is an error during the upload, show the error message returned from the server and style it
-  so that it's prominent
-```
-
 
 # Submitting your solution
 
@@ -173,7 +148,7 @@ you can follow these steps to send your changes to the program manager
 * From a command line run `git clean -fxd` to prep your repo for submission
 * Zip up the entire project directory contents
 * Copy the zip file out to the directory provided in the original email that we sent out to you
-* Send an email to WHO_SHOULD_GET_THIS@getbankpoint.com to let us know that you've completed the upload
+* Send an email to us to let us know you've submitted your solution. The email address to send to will be in the programming sample invitation email.
 
 We'll be back in touch with you within a business day or two for next steps.
 
