@@ -74,7 +74,7 @@ on the team to work on the same files later.
 
 ## TASK-001 Improve the loans file upload process
 
-The import screen allows a user to upload a properly formatted date file containing loan information. 
+The import screen allows a user to upload a properly formatted data file containing loan information. 
 A sample loan data file has been provided at `.\build\loan-data-file.csv` with some test data that the QA group uses. 
 
 The product manager wants the loan customer and branch to be popluated during import. There are separate tables
