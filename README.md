@@ -119,7 +119,7 @@ Update the loan listing grid to format the currency and date columns as follows
 ```
 
 
-## TASK-004 Enable sorting for the loan name and customer name columns
+## TASK-004 Enable sorting for the loan number and customer name columns
 
 The product manager is concerned that some of our larger clients won't be able to easily find the loans they're
 interested in as they may have tens of thousands of loans. She wants the grid on the loan listing page to be sortable.
@@ -142,9 +142,12 @@ Update the loan listing screen to:
 # Submitting your solution
 
 Once you've completed all the development tasks, and committed your changes to your local git repo 
-you can follow these steps to send your changes to the program manager
+you can follow these steps to send your changes to the program manager.
+
+Please make sure you have committed **ALL** of your work prior to running these steps as any unsaved changes will be lost.
 
 * Make sure that all of your code changes have been committed. The program manager will be reviewing your code diffs.
+* From a command prompt in the root of your project run the following to remove all unversioned/unsaved files as well as build artifacts `git clean -fxd`
 * Zip up the entire project directory contents
 * Copy the zip file out to the directory provided in the original email that we sent out to you
 * Send an email to us to let us know you've submitted your solution. The email address to send to will be in the programming sample invitation email.
