@@ -144,7 +144,13 @@ Update the loan listing screen to:
 Once you've completed all the development tasks, and committed your changes to your local git repo 
 you can follow these steps to send your changes to the program manager.
 
+## Check in your final changes!!
+
 Please make sure you have committed **ALL** of your work prior to running these steps as any unsaved changes will be lost.
+
+Running the git clean command below will wipe out any staged but uncommitted changes. Be sure to run `git status` first to ensure you've checked all of your hard work in.
+
+## Submission steps
 
 * Make sure that all of your code changes have been committed. The program manager will be reviewing your code diffs.
 * From a command prompt in the root of your project run the following to remove all unversioned/unsaved files as well as build artifacts `git clean -fxd`
