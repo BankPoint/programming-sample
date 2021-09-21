@@ -101,8 +101,8 @@ they're not working.
 ```angular2html
 Update the loan listing screen to:
 
-* Show 25 records at a time
-* Activate the Next and Previous buttons so the user can page through the full loan list, 25 records at a time
+* Only retrieve and show a max of 25 records at a time from the server. Currently the `getLoanList` function is retrieving all records from the server and this could present a client side performance issue. 
+* Activate the Next and Previous buttons so the user can page through the full loan list.
 * Do not perform a full page refresh when paging. The next page of loan results should be retrieved using JavaScript and the page updated dynamically
 * Disable the Next or Previous buttons if there is not a next or previous page of data available, respectively
 * All JavaScript for the loan list screen should be included in the existing loanList.js file
@@ -115,7 +115,7 @@ Update the loan listing grid to format the currency and date columns as follows
 ```angular2html
 * Principal should show as USD currency (e.g. $123,456.78)
 * Maturity Date should show in US short date format (e.g. 12/31/2021)
-* All formatting changes should be applied client side. Don't modify the LoanDto class for this ticket
+* All formatting changes should be applied client side using knockout formatters. Don't modify the LoanDto class for this ticket
 ```
 
 
@@ -135,6 +135,7 @@ Update the loan listing screen to:
 * Clicking on a sortable column should change the sort order from ascending to descending, or vice-versa
 * Only one column should be sortable at a time
 * If the currently sorted column is clicked again, then the sort order should be toggled
+* Loan numbers should be sorted numerically, not lexicographically
 * Ensure that the paged data on screen honors the updated sort options
 ```
 
