@@ -101,9 +101,11 @@ they're not working.
 ```angular2html
 Update the loan listing screen to:
 
-* Only retrieve and show a max of 25 records at a time from the server. Currently the `getLoanList` function is retrieving all records from the server and this could present a client side performance issue. 
+* Only retrieve and show a max of 25 records at a time from the server. Currently the `getLoanList` 
+  function is retrieving all records from the server and this could present a client side performance issue. 
 * Activate the Next and Previous buttons so the user can page through the full loan list.
-* Do not perform a full page refresh when paging. The next page of loan results should be retrieved using JavaScript and the page updated dynamically
+* Do not perform a full page refresh when paging. The next page of loan results should be retrieved using 
+  JavaScript and the page updated dynamically
 * Disable the Next or Previous buttons if there is not a next or previous page of data available, respectively
 * All JavaScript for the loan list screen should be included in the existing loanList.js file
 ```
